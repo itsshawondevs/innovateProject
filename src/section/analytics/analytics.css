@@ -1,0 +1,19 @@
+#analytics{
+    background: url(../../assets/images/analytics-img.png);
+    border-radius: 70px;
+    padding: 123px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.analytics__header{
+    color: var(--white);
+    text-align: center;
+}
+.analytics--paragraph{
+    width: 635px;
+    margin: 0 auto;
+    text-align: center;
+    color: rgb(255, 255, 255, 0.6);
+    margin-top: 10px;
+}

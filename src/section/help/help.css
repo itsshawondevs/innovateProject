@@ -1,0 +1,107 @@
+#help__area{
+    padding: 120px 0 125px 0;
+}
+.heading--center{
+    text-align: center;
+    margin-top: 14px;
+}
+.help__item__wrapper{
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+}
+.help__item{
+    background-color: #F8A64C;
+    border-radius: 14px;
+    padding: 38px 46px 40px 47px;
+    text-align: center;
+    position: relative;
+}
+.help__item:hover{
+    cursor: pointer;
+}
+.help__item::after{
+    position: absolute;
+    content: "";
+    width: 68px;
+    height: 60px;
+    clip-path: polygon(46% 100%, 0 0, 100% 0);
+    bottom: -60px;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: all linear 0.4s;
+}
+.help__item:nth-child(1):hover::after{
+    opacity: 1;
+    background-color: #F8A64C;
+}
+.help__item:nth-child(2):hover::after{
+    opacity: 1;
+    background-color: #F0EDFF;
+}
+.help__item:nth-child(3):hover::after{
+    opacity: 1;
+    background-color: rgba(232, 252, 242);
+}
+.help__item:nth-child(4):hover::after{
+    opacity: 1;
+    background-color: #FEF6EC;
+}
+.heading--color{
+    color: #FDFDFD;
+    margin-top: 30px;
+}
+.help__item:nth-child(2){
+    background-color: #F0EDFF;
+}
+.help__item:nth-child(2) .heading--color{
+    color: #29313D;
+}
+.help__item:nth-child(3){
+    background-color: rgb(232, 252, 242, 0.7);
+}
+.help__item:nth-child(3) .heading--color{
+    color: #29313D;
+}
+.help__item:nth-child(4){
+    background-color: #FEF6EC;
+}
+.help__item:nth-child(4) .heading--color{
+    color: #29313D;
+}
+.help__footer{
+    margin-top: 100px;
+    display: flex;
+    column-gap: 129px;
+}
+.help__img{
+    height: 340px;
+    width: 340px;
+    overflow: hidden;
+}
+.help__img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.heading--size{
+    font-size: 36px;
+}
+.help__content p{
+    width: 596px;
+    margin-top: 24px;
+    color: #29313D;
+}
+.help__content .common__btn{
+    padding: 30px;
+    border: 1px solid var(--purple);
+    margin-top: 48px;
+    display: inline-block;
+    color: var(--purple);
+}
+.help__content .common__btn:hover{
+    background-color: var(--purple);
+    border: 1px solid transparent;
+    color: var(--white);
+}
